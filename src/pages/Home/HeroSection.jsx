@@ -6,6 +6,7 @@ import image2 from '../../assets/image/2.jpg'
 import image3 from '../../assets/image/3.jpg'
 import image4 from '../../assets/image/4.jpg'
 import { FaCirclePlay } from 'react-icons/fa6';
+import { Link } from 'react-router';
 
 const HeroSection = () => {
     return (
@@ -22,7 +23,10 @@ const HeroSection = () => {
                     <p className='mb-6'>January 29, 2018</p>
                     <div className='flex items-center justify-between gap-4'>
                         <button className='bg-red-500 px-6 py-2 font-semibold rounded'>Book Now</button>
-                        <FaCirclePlay className='text-red-500 text-4xl cursor-pointer' />
+
+                        <Link to="https://youtu.be/u9Mv98Gr5pY?si=3r15L9z_Lm37Xx-C">
+                            <FaCirclePlay className='text-red-500 text-4xl cursor-pointer' />
+                        </Link>
                     </div>
                 </div>
             </SwiperSlide>
@@ -59,7 +63,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </SwiperSlide>
-            
+
         </Swiper>
     );
 };
