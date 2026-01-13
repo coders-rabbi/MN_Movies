@@ -7,7 +7,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="flex justify-between items-center relative">
+        <div className="flex justify-between items-center relative z-50">
 
             {/* Logo Section */}
             <div className="flex order-2 xl:order-1 items-center justify-between w-full xl:w-auto">

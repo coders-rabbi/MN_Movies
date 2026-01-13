@@ -26,7 +26,7 @@ const RecentSection = () => {
                 console.error("API Error:", error);
             } finally {
                 setLoading(false);
-            }
+            }z
         };
 
         fetchMovies();

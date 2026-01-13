@@ -16,7 +16,7 @@ const HeroSection = () => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide className='relative'>
+            <SwiperSlide className='relative z-0'>
                 <img className='w-full h-[500px] xl:h-[700px] object-cover' src={image1} alt="" />
                 <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center px-10 bg-black bg-opacity-30 text-white'>
                     <h2 className='text-4xl font-bold mb-4'>IMX 3D Experience</h2>
