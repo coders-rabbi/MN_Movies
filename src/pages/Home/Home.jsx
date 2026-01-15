@@ -1,12 +1,14 @@
 import React from 'react';
 import HeroSection from './HeroSection';
-import RecentSection from './RecentSection';
+import Details from '../Details/Details';
+import Movies from './Movies';
 
 const Home = () => {
     return (
         <div>
-            <HeroSection></HeroSection>
-            <RecentSection></RecentSection>
+            <HeroSection />
+            <Movies />
+            <Details />
         </div>
     );
 };

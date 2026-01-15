@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../../assets/logo/movie.png';
 import { TiThMenu } from 'react-icons/ti';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -33,18 +34,24 @@ const Navbar = () => {
         ${open ? 'top-[80px] opacity-100' : 'top-[-400px] opacity-0'}
         xl:opacity-100`}
             >
-                <li className="font-serif font-semibold mx-4 my-2 hover:bg-red-500 rounded">
+                <Link><li className="font-serif font-semibold mx-4 my-2 rounded">
                     Home
-                </li>
-                <li className="font-serif font-semibold mx-4 my-2 hover:bg-red-500 rounded">
-                    Schedule
-                </li>
-                <li className="font-serif font-semibold mx-4 my-2 hover:bg-red-500 rounded">
-                    Movie
-                </li>
-                <li className="font-serif font-semibold mx-4 my-2 hover:bg-red-500 rounded">
-                    News
-                </li>
+                </li></Link>
+                <Link>
+                    <li className="font-serif font-semibold mx-4 my-2  rounded">
+                        Schedule
+                    </li>
+                </Link>
+                <Link>
+                    <li className="font-serif font-semibold mx-4 my-2  rounded">
+                        Movie
+                    </li>
+                </Link>
+                <Link>
+                    <li className="font-serif font-semibold mx-4 my-2  rounded">
+                        News
+                    </li>
+                </Link>
 
                 <button className="bg-red-500 px-7 py-2 text-xl font-semibold text-white rounded mx-4">
                     Login
